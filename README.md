@@ -15,6 +15,7 @@
 - nginx
   - https://gist.github.com/lleellee0/8e1be478178078e931dd3180f0f56d21
   - https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/
+
 - RabbitMQ
   - https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp/2.4.1
   ```
@@ -22,3 +23,6 @@
   docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
   ```
   
+- ElasticSearch
+  - https://gist.github.com/lleellee0/e4a5acdb9dbb4477b6d88943654303e2
+  - https://chrome.google.com/webstore/detail/elasticsearch-head/ffmkiejjmecolpfloofpjologoblkegm
