@@ -11,6 +11,23 @@
 
 - 젠킨스
   - https://gist.github.com/lleellee0/6c8fa84c5055c16125f00222cabc4d17
+    ```
+    # jenkins 인스턴스에서 실행하는 명령어 (한 줄씩 실행하면서 정상적으로 실행이 되고 있는지 꼭 확인해보세요)
+    sudo yum install wget
+    sudo yum install maven
+    sudo yum install git
+    sudo yum install docker
+
+    sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    sudo yum install jenkins
+    sudo systemctl start jenkins
+    sudo systemctl status jenkins
+
+    # 여기까지 실행하면 설치는 완료
+
+    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+    ```
 
 - nginx
   - https://gist.github.com/lleellee0/8e1be478178078e931dd3180f0f56d21
