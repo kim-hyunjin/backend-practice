@@ -9,6 +9,18 @@
   - https://subicura.com/2017/02/10/docker-guide-for-beginners-create-image-and-deploy.html
   - https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
 
+- postgresql
+  ```
+  # postgresql을 도커로 실행시키는 명령어
+  docker run --name pgsql -d -p 5432:5432 -e POSTGRES_USER=postgresql -e POSTGRES_PASSWORD=postgrespassword postgres
+
+  # postgresql-instance-1에서 실행해야할 명령어
+  sudo yum install -y docker
+  sudo systemctl start docker
+  sudo chmod 666 /var/run/docker.sock
+  docker run --name pgsql -d -p 5432:5432 -e POSTGRES_USER=postgresql -e POSTGRES_PASSWORD=postgrespassword postgres
+  ```
+
 - 젠킨스
   - https://gist.github.com/lleellee0/6c8fa84c5055c16125f00222cabc4d17
     ```
