@@ -1,7 +1,3 @@
-## 클래스101 백엔드 실무
-
-### 참고자료 목록
-
 - 스트레스 테스스 툴 : Artillery
   - https://artillery.io/docs/guides/overview/welcome.html
 
